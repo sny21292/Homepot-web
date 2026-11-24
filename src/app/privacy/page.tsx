@@ -1,5 +1,5 @@
 // Privacy policy (the stores' "Privacy policy URL"). Keep it in step with what the app
-// really collects: see ../supabase/migrations/ and ../src/lib/ in the app repo.
+// really collects: see supabase/migrations/ and src/lib/ in the Homepot app repo.
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
