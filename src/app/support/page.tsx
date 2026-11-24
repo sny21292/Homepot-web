@@ -9,6 +9,8 @@ export const metadata: Metadata = { title: 'Support' };
 export default function SupportPage() {
   return (
     <main className="doc">
+      <div className="doc-card">
+      <span className="eyebrow">Help</span>
       <h1>Support</h1>
       <p>
         Questions, problems or ideas? Email{' '}
@@ -32,6 +34,7 @@ export default function SupportPage() {
       <p>
         <b>How do I delete my account?</b> See <Link href="/delete-account/">Delete your account</Link>.
       </p>
+      </div>
     </main>
   );
 }

@@ -13,6 +13,8 @@ export default function DeleteAccountPage() {
   const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Delete my Homepot account')}`;
   return (
     <main className="doc">
+      <div className="doc-card">
+      <span className="eyebrow">Your data</span>
       <h1>Delete your Homepot account</h1>
       <p className="updated">Homepot by {COMPANY}</p>
 
@@ -58,6 +60,7 @@ export default function DeleteAccountPage() {
       <p>
         More detail is in our <Link href="/privacy/">privacy policy</Link>.
       </p>
+      </div>
     </main>
   );
 }

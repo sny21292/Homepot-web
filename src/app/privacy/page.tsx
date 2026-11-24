@@ -35,6 +35,8 @@ const COLLECTED: [string, string][] = [
 export default function PrivacyPage() {
   return (
     <main className="doc">
+      <div className="doc-card">
+      <span className="eyebrow">Legal</span>
       <h1>Privacy Policy</h1>
       <p className="updated">Last updated: {POLICY_UPDATED}</p>
       <p>
@@ -148,6 +150,7 @@ export default function PrivacyPage() {
         <br />
         Email: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
       </p>
+      </div>
     </main>
   );
 }
