@@ -13,6 +13,10 @@ export const metadata: Metadata = {
 const COLLECTED: [string, string][] = [
   ['Email address', 'To create your account and sign you in (we email you a one-time code).'],
   [
+    'Password (only if you choose to set one in Settings)',
+    'So you can sign in without waiting for an email code. It is stored only as a one-way encrypted hash by our database provider, so nobody, including us, can read it.',
+  ],
+  [
     'Name (the one you choose, or the one Google or Apple shares when you sign in with them)',
     'So your family can see who added an expense.',
   ],

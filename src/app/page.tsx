@@ -20,7 +20,7 @@ const FAQ = [
   { q: 'Is Homepot free?', a: 'Yes. Tracking expenses and sharing them with your family is free.' },
   { q: 'Can my family see everything I spend?', a: 'No. Each expense is Household (your family sees it) or Personal (only you see it). The rule is enforced on our servers, not just hidden in the app.' },
   { q: 'Which currencies work?', a: 'All of them. Each family picks one currency, and amounts are shown the way your country writes numbers.' },
-  { q: 'Do I need a password?', a: 'No. Sign in with Google, Apple, or a 6-digit code we email you.' },
+  { q: 'Do I need a password?', a: 'No. Sign in with Google, Apple, or a 6-digit code we email you. Prefer a password? You can add one in Settings.' },
   { q: 'Does it read my bank account or SMS?', a: 'No. You add expenses yourself. Homepot never asks for bank details, card numbers or your messages.' },
   { q: 'Can I delete my account?', a: 'Any time, from Settings in the app. Your personal expenses are deleted with it.' },
 ];
@@ -54,7 +54,7 @@ export default function Home() {
               <li><CheckCircle /> Free</li>
               <li><CheckCircle /> Any currency</li>
               <li><CheckCircle /> No ads</li>
-              <li><CheckCircle /> No passwords</li>
+              <li><CheckCircle /> No password needed</li>
             </ul>
           </div>
           <HeroPhone />
