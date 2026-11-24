@@ -1,0 +1,52 @@
+/* Homepot website styles: brand orange, light and dark mode, readable on phones. */
+:root {
+  --orange: #e8590c;
+  --orange-soft: #fff4e6;
+  --text: #212529;
+  --muted: #6c757d;
+  --bg: #ffffff;
+  --line: #e9ecef;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --orange-soft: #2b1d12;
+    --text: #f1f3f5;
+    --muted: #adb5bd;
+    --bg: #16181b;
+    --line: #2b2f33;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); }
+body { font: 16px/1.6 -apple-system, 'Segoe UI', Roboto, sans-serif; }
+a { color: var(--orange); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+.doc { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+.doc h1 { font-size: 30px; line-height: 1.25; margin: 16px 0 4px; }
+.doc h2 { font-size: 19px; margin: 32px 0 8px; }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 8px 8px 0; border-bottom: 1px solid var(--line); }
+
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--orange); font-weight: 800; font-size: 22px; text-decoration: none; }
+.brand img { width: 36px; height: 36px; border-radius: 9px; }
+.nav-links a { margin-left: 16px; color: var(--text); text-decoration: none; font-size: 15px; }
+
+.hero { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: center; padding: 24px 0 48px; }
+@media (min-width: 760px) { .hero { grid-template-columns: 1.1fr 1fr; padding: 48px 0 64px; } }
+.hero h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.1; margin: 0 0 16px; }
+.hero p { font-size: 18px; color: var(--muted); margin: 0 0 24px; }
+.hero img { width: 100%; height: auto; }
+.badges { display: flex; flex-wrap: wrap; gap: 12px; }
+.badge { display: inline-block; padding: 12px 18px; border-radius: 12px; background: var(--text); color: var(--bg); font-weight: 600; text-decoration: none; font-size: 15px; }
+.soon { color: var(--muted); font-size: 14px; margin-top: 12px; }
+
+.features { display: grid; grid-template-columns: 1fr; gap: 16px; padding-bottom: 64px; }
+@media (min-width: 760px) { .features { grid-template-columns: repeat(3, 1fr); } }
+.feature { background: var(--orange-soft); border-radius: 16px; padding: 20px; }
+.feature h3 { margin: 0 0 6px; font-size: 17px; }
+.feature p { margin: 0; color: var(--muted); font-size: 15px; }
+
+.footer { border-top: 1px solid var(--line); padding: 20px 0 40px; color: var(--muted); font-size: 14px; }
+.footer a { margin-right: 16px; }
