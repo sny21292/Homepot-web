@@ -350,6 +350,10 @@ h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.02em; color: v
 .doc table { width: 100%; border-collapse: collapse; font-size: 15px; }
 .doc th, .doc td { text-align: left; vertical-align: top; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--line); }
 .doc th { font-family: var(--font-display); }
+.join-code { font-family: var(--font-display); font-size: clamp(40px, 9vw, 64px); font-weight: 900; letter-spacing: .18em; color: var(--orange-600); background: var(--orange-50); border: 1px dashed var(--orange-100); border-radius: 20px; padding: 14px 20px; text-align: center; margin: 18px 0; }
+.join-open { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border-radius: 999px; background: var(--orange-600); color: #fff; font-weight: 800; text-decoration: none; }
+.join-open:hover { filter: brightness(1.05); }
+.join-card .store-badges { margin-top: 12px; }
 .doc .callout { background: var(--orange-50); border: 1px solid var(--orange-100); border-radius: 16px; padding: 16px 18px; color: var(--ink-2); }
 
 @media (prefers-reduced-motion: reduce) {
